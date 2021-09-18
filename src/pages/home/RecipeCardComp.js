@@ -7,6 +7,7 @@ import defaultImg from '../../assets/default-image.jpg';
 const RecipeCardComp = ({ recipe }) => {
   // console.log(recipe)
   const history = useHistory();
+
   const moreClick = () => {
     // history.push("/view")
     history.push({
@@ -14,6 +15,7 @@ const RecipeCardComp = ({ recipe }) => {
       recipe: recipe,
     });
   };
+  
   return (
     <RecipeCard>
       <RecipeHeader>{recipe?.label}</RecipeHeader>
